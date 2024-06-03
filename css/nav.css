@@ -1,5 +1,5 @@
 header {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem var(--padding-inline);
   position: fixed;
   top: 0;
   right: 0;
@@ -14,7 +14,6 @@ header {
 .logo {
   width: calc(5rem + 5vw);
   padding-block: 10px;
-  margin-inline-start: 1rem;
   z-index: 1000;
 }
 
