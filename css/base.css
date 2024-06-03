@@ -54,20 +54,24 @@ button {
     ),
     radial-gradient(at 100% 5%, hsla(217, 91%, 31%, 0.74) 0px, transparent 50%),
     radial-gradient(at 82% 99%, hsla(213, 100%, 50%, 0.41) 0px, transparent 50%);
+  --padding-inline: min(5vw, 5rem);
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-}
-section {
-  min-height: max-content;
-  padding: 2rem 1.5rem;
+  padding-inline: var(--padding-inline);
 }
 
 @media screen and (min-width: 991px) {
-  section {
-    padding: 1rem 5rem;
+  main {
+    padding-inline: var(--padding-inline);
   }
+}
+
+section {
+  min-height: max-content;
+  padding-block: 7rem;
 }
