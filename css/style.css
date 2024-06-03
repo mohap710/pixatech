@@ -3,7 +3,7 @@
   width: calc(2vw + 4rem);
   aspect-ratio: 1;
   background-color: #f9a826;
-  top: 2%;
+  top: 1%;
   right: 4%;
 }
 .top-shape::after {
