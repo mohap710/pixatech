@@ -1,3 +1,44 @@
+.top-shape {
+  position: absolute;
+  width: calc(2vw + 4rem);
+  aspect-ratio: 1;
+  background-color: #f9a826;
+  top: 2%;
+  right: 4%;
+}
+.top-shape::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(8vw + 1.7rem);
+  aspect-ratio: 1;
+  border: 5px solid black;
+  left: 50%;
+  bottom: 65%;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 6fr)); */
+  /* gap: 0rem; */
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: calc(2vw + 3rem);
+  font-weight: 100;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+h1 strong {
+  font-weight: 800;
+}
+.slogan {
+  max-width: 57ch;
+  text-align: justify;
+  line-height: 1.5;
+}
 .services h2 {
   font-size: 48px;
   font-family: "Lato", sans-serif;
@@ -24,9 +65,9 @@ hr {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-template-rows: repeat(auto-fit, minmax(auto, 1fr));
-  gap: 10px;
+  gap: 2rem;
 }
 
 .card {
