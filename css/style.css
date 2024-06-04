@@ -116,3 +116,25 @@ hr {
   max-width: calc(100% - 10ch);
   margin: auto;
 }
+/* <!-- ----------------------------------------------------------------------------------- --> */
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 170px;
+  background-color: #f9a826;
+  border-radius: 30px;
+}
+.container img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  color: #ffffff;
+  font-size: 2em;
+}
