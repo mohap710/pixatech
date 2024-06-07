@@ -299,3 +299,22 @@ footer {
   color: var(--white);
   background-color: #3f3d56;
 }
+
+/* -------------------------------------------------------------------------- */
+.metrics-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  width: 850px;
+  margin-left: 150px;
+}
+.metrics-container p {
+  margin: 0 10px;
+  border-left: 5px solid #f9a826;
+  padding-left: 10px;
+}
+
+.metrics-container p strong {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
