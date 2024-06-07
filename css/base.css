@@ -1,3 +1,22 @@
+:root {
+  --c1: #f9a826;
+  --white: #f8f8f8;
+  --black: #051014;
+  --rich-black: #2f2e41;
+  --grey: #e6e6e6;
+  --dark-blue: #1d3152;
+  --light-blue: #2254c7;
+  --soft-blue: #5c97bf;
+  --whitesmoke: #f1edee;
+  --gradient: radial-gradient(
+      at 0% 0%,
+      hsla(204, 48%, 45%, 0.64) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 5%, hsla(217, 91%, 31%, 0.74) 0px, transparent 50%),
+    radial-gradient(at 82% 99%, hsla(213, 100%, 50%, 0.41) 0px, transparent 50%);
+  --padding-inline: min(5vw, 5rem);
+}
 *,
 *::before,
 *::after {
@@ -12,6 +31,7 @@ html,
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: var(--grey);
 }
 
 a {
@@ -31,25 +51,6 @@ img {
 button {
   border: transparent;
   border-radius: 0.5rem;
-}
-:root {
-  --c1: #f9a826;
-  --white: #f8f8f8;
-  --black: #051014;
-  --rich-black: #2f2e41;
-  --grey: #e6e6e6;
-  --dark-blue: #1d3152;
-  --light-blue: #2254c7;
-  --soft-blue: #5c97bf;
-  --whitesmoke: #f1edee;
-  --gradient: radial-gradient(
-      at 0% 0%,
-      hsla(204, 48%, 45%, 0.64) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 100% 5%, hsla(217, 91%, 31%, 0.74) 0px, transparent 50%),
-    radial-gradient(at 82% 99%, hsla(213, 100%, 50%, 0.41) 0px, transparent 50%);
-  --padding-inline: min(5vw, 5rem);
 }
 
 main {
