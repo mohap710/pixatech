@@ -20,7 +20,7 @@ header {
 nav {
   display: flex;
   position: absolute;
-  left: max(15vw, 15rem);
+  left: max(20vw, 20rem);
 }
 
 .colored-nav {
@@ -34,7 +34,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   position: fixed;
   right: 0;
   top: 0;
@@ -127,7 +127,7 @@ nav {
   }
 
   .nav-link > a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     -webkit-text-stroke: unset;
     color: var(--rich-black);
   }
