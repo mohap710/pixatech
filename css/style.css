@@ -99,13 +99,16 @@ h1 strong {
 .line {
   position: relative;
   color: #3f3d56;
-  /* width: 50%; */
+  width: 25%;
   height: 2rem;
   border-top: 1.5px solid black;
   margin-top: 30px;
   margin-bottom: 1rem;
   margin-inline: auto;
   overflow: visible;
+}
+#about .line {
+  width: auto;
 }
 .underline {
   border-top: none;
