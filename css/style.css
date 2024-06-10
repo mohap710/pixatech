@@ -1,6 +1,6 @@
 .top-shape {
   position: absolute;
-  width: calc(2vw + 4rem);
+  width: calc(4vw + 4rem);
   aspect-ratio: 1;
   background-color: #f9a826;
   top: 1%;
@@ -10,14 +10,15 @@
   content: "";
   display: block;
   position: absolute;
-  width: calc(8vw + 1.7rem);
+  width: calc(12vw + 1.7rem);
   aspect-ratio: 1;
   border: 5px solid black;
   left: 50%;
-  bottom: 65%;
+  bottom: 50%;
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 6fr)); */
@@ -26,7 +27,7 @@
   justify-content: center;
 }
 .hero-image {
-  max-width: 40%;
+  max-width: 57%;
 }
 h1 {
   font-size: calc(2vw + 2.3rem);
@@ -39,6 +40,33 @@ h1 strong {
   font-weight: 900;
   font-style: italic;
 }
+
+.custom-shape-divider-bottom-1718051799 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1718051799 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1718051799 .shape-fill {
+  fill: #f3f3f3;
+}
+
+.services {
+  background-color: #f3f3f3;
+}
+/* <!-- ----------------------------------------------------------------------------------- --> */
+
 .slogan {
   max-width: 57ch;
   text-align: justify;
@@ -218,46 +246,66 @@ h1 strong {
 }
 /* <!-- ----------------------------------------------------------------------------------- --> */
 
-.skills-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-block: 5rem;
-  gap: 1rem;
-  min-height: 350px;
-  border: 1px solid red;
+.gallery {
+  --img-size: calc(105px - 0.5rem / 2);
+  display: grid;
+  place-content: center;
+  gap: 0.5rem;
+  grid-template-columns: repeat(8, var(--img-size));
+  grid-template-rows: repeat(3, var(--img-size));
+
+  div {
+    width: 100%;
+    aspect-ratio: 1;
+    /*     height: 100%; */
+    object-fit: cover;
+    grid-column: span 2;
+    border-radius: 0.5rem;
+    clip-path: path(
+      "M 80 20 C 100 0 100 0 120 20 C 140 40 160 60 180 80 C 200 100 200 100 180 120 C 160 140 140 160 120 180 C 100 200 100 200 80 180 C 60 160 40 140 20 120 C 0 100 0 100 20 80 Z"
+    );
+    transition: all 500ms, clip-path 500ms;
+
+    &:nth-of-type(4) {
+      grid-column: 2 / span 2;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.gallery div:has(.tech) {
+  background-color: #f29130;
+}
+.tech-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+.js {
+  background-image: url("../images/icons/js.png");
+}
+.python {
+  background-image: url("../images/icons/python.png");
+}
+.mailchimp {
+  background-image: url("../images/icons/mailchimp.svg");
+}
+.nodejs {
+  background-image: url("../images/icons/nodejs.png");
+}
+.php {
+  background-image: url("../images/icons/php.png");
+}
+.docker {
+  background-image: url("../images/icons/docker.png");
 }
 
-.skill {
-  position: absolute;
-  background: var(--c1);
-  border: 1px solid rgba(49, 25, 25, 0.171);
-  color: transparent;
-  box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.8);
-  border-radius: 1.5rem;
-  transform: rotate(45deg);
-  transition: all ease-in-out 450ms;
-}
-.skill:hover {
-  filter: none;
-}
-.skill-icon {
-  max-width: 80%;
-  padding: 1.7rem;
-  rotate: -45deg;
-  vertical-align: center;
-}
-/* .skill:nth-child(odd) {
-  animation: 1000ms ease-in-out infinite alternate pulse;
-}
-.skill:nth-child(even) {
-  animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
-} */
-
-@keyframes pulse {
-  to {
-    transform: translate3d(0px, 0px, -10px);
-    box-shadow: 15px 15px -10px -10px rgba(black, 0.8);
+@keyframes zIndexHack {
+  0%,
+  100% {
+    z-index: 10;
   }
 }
 
@@ -318,13 +366,13 @@ h1 strong {
 }
 
 .walk-img {
-  width: 35%;
+  width: 40%;
 }
 .m--5 {
   margin-inline: max(-5vw, -5rem);
 }
 .walk {
-  font-size: calc(1.7vw + 1.5rem);
+  font-size: calc(2.5vw + 1.5rem);
   color: var(--white);
   font-weight: 300;
   text-align: center;
@@ -336,7 +384,7 @@ h1 strong {
 
 .work-container h3 {
   color: var(--white);
-  font-size: calc(1.9vw + 1.5rem);
+  font-size: calc(3vw + 1.5rem);
   max-width: 14ch;
   font-weight: 600;
 }
@@ -373,7 +421,8 @@ h1 strong {
 }
 
 .contact-info h3 {
-  margin-bottom: 10px;
+  font-weight: 800;
+  margin-block: 10px;
 }
 
 .contact-info .icon {
@@ -436,7 +485,13 @@ h1 strong {
   border-radius: 16px;
   margin-bottom: 1rem;
   position: relative;
-  padding-left: max(10%, 4vw);
+  padding-left: max(13%, 5vw);
+}
+@media (max-width: 500px) {
+  .connect-form input[type="text"],
+  .connect-form input[type="email"] {
+    padding-left: max(20%, 4vw);
+  }
 }
 
 .connect-form button[type="submit"] {
