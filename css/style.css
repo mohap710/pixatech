@@ -99,7 +99,7 @@ h1 strong {
 .line {
   position: relative;
   color: #3f3d56;
-  width: 25%;
+  /* width: 50%; */
   height: 2rem;
   border-top: 1.5px solid black;
   margin-top: 30px;
@@ -537,7 +537,6 @@ footer {
   font-size: 2rem;
   font-weight: 800;
 }
-
 
 .shift-right {
   margin-left: 55%;
