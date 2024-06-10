@@ -537,3 +537,12 @@ footer {
   font-size: 2rem;
   font-weight: 800;
 }
+
+
+.shift-right {
+  margin-left: 55%;
+}
+
+.shift-left {
+  margin-right: 55%;
+}
