@@ -2,6 +2,9 @@ sup {
   font-size: 1.2rem;
   margin-right: 5px;
 }
+.full-width {
+  margin-inline: calc(-1 * var(--padding-inline));
+}
 .float-right {
   float: right;
 }
