@@ -7,13 +7,13 @@ function openNav() {
 	navToggler.classList.add("opened");
 	nav.setAttribute("data-visible", "true");
 	// prevent body from scrolling when menu is opened
-	// document.querySelector("body").style.overflow = "hidden";
+	document.querySelector("html").style.overflowY = "hidden";
 }
 function closeNav() {
 	navToggler.setAttribute("aria-expanded", "false");
 	navToggler.classList.remove("opened");
 	nav.setAttribute("data-visible", "false");
-	// document.querySelector("body").style.overflow = "scroll";
+	document.querySelector("html").style.overflowY = "scroll";
 }
 function toggleNav() {
 	const visibility = nav.getAttribute("data-visible");
@@ -32,3 +32,18 @@ function setActiveClass(index) {
 	const visibility = nav.value.getAttribute("data-visible");
 	if (visibility === "true") closeNav();
 }
+
+// close menu on mobile when clicking a link
+
+document.querySelectorAll(".nav-link > a").forEach((link) => {
+	link.addEventListener("click", () => {
+		const isNavOpened = nav.getAttribute("data-visible");
+		isNavOpened ? closeNav() : ''
+	})
+})
+
+
+// copywrite footer text
+
+const footer = document.querySelector('footer');
+footer.innerText = `&copy; ${new Date().getFullYear()} PIXATECH`
