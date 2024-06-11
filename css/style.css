@@ -97,7 +97,7 @@ h1 strong {
 }
 
 .laptop {
-  max-width: 65%;
+  max-width: max(15rem, 65%);
   margin: auto;
   padding-top: 3rem;
 }
@@ -172,19 +172,18 @@ h1 strong {
   flex-wrap: wrap;
   gap: 1.7rem;
   margin: 2rem auto; /* Add some margin for better presentation */
+  padding-inline: var(--padding-inline);
 }
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(
-    4,
-    minmax(250px, 0.8fr)
-  ); /* Responsive columns */
-  gap: 1.2rem; /* Add some gap between cards */
+  grid-template-columns: repeat(4, minmax(230px, 0.5fr));
+  gap: 1.2rem;
 }
+
 .card-grid:nth-child(2) {
-  grid-template-columns: repeat(3, 0.345fr);
-  gap: 1.2rem; /* Add some gap between cards */
+  grid-template-columns: repeat(3, 0.4fr);
+  gap: 1.2rem;
 }
 
 /* Media Queries for Responsive Design */
@@ -323,6 +322,10 @@ h1 strong {
 
 /* <!-- ----------------------------------------------------------------------------------- --> */
 
+/* .contact-section {
+  background-color: #e1e1e1;
+  margin-inline: calc(-1 * var(--padding-inline));
+} */
 .container {
   display: flex;
   flex-wrap: wrap;
