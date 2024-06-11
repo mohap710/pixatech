@@ -553,10 +553,20 @@ footer {
   font-weight: 800;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------------- */
 .shift-right {
   margin-left: 55%;
 }
 
 .shift-left {
   margin-right: 55%;
+}
+
+.bkimg {
+  background-image: url("../images/who\ we\ are.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 850px;
+  background-position: right bottom;
+  padding-top: inherit;
 }
