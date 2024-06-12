@@ -46,4 +46,4 @@ document.querySelectorAll(".nav-link > a").forEach((link) => {
 // copywrite footer text
 
 const footer = document.querySelector('footer');
-footer.innerText = `&copy; ${new Date().getFullYear()} PIXATECH`
+footer.innerText = `© ${new Date().getFullYear()} PIXATECH`
