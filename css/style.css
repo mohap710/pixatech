@@ -566,7 +566,7 @@ footer {
   background-image: url("../images/who\ we\ are.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 850px;
-  background-position: right bottom;
-  padding-top: inherit;
+  background-position: 100% 50%;
+  padding-top: 0;
+  padding-bottom: 40%;
 }
