@@ -61,11 +61,29 @@ h1 strong {
 .custom-shape-divider-bottom-1718051799 .shape-fill {
   fill: #f3f3f3;
 }
+.custom-shape-divider-bottom-1718307965 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1718307965 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 121px;
+}
+
+.custom-shape-divider-bottom-1718307965 .shape-fill {
+  fill: #ffffff;
+}
 
 .services {
   background-color: #f3f3f3;
 }
-/* <!-- ----------------------------------------------------------------------------------- --> */
 
 .slogan {
   max-width: 57ch;
