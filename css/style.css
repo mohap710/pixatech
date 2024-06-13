@@ -293,6 +293,7 @@ h1 strong {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
+  cursor: pointer;
 }
 .js {
   background-image: url("../images/icons/js.png");
