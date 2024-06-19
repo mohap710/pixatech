@@ -107,11 +107,12 @@ h1 strong {
 }
 .section-text {
   --space-top: 1rem;
-  font-size: calc(0.5vw + 0.5rem);
+/*   font-size: calc(0.5vw + 0.5rem); */
   margin-top: var(--space-top);
   margin-inline: auto;
   text-align: center;
-  font-weight: 300;
+/*   font-weight: 300; */
+   font-size: 1rem;
 }
 .tech .section-text {
   max-width: 115ch;
@@ -583,5 +584,9 @@ footer {
 @media only screen and (max-width: 768px) {
   .bkimg {
     background-image: none;
+  }
+  .shift-right,
+  .shift-left {
+    margin: 3rem 0;
   }
 }
