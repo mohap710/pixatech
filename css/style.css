@@ -41,6 +41,9 @@ h1 strong {
   font-style: italic;
 }
 
+.uk-slider-nav {
+  z-index: 1000;
+}
 .custom-shape-divider-bottom-1718051799 {
   position: absolute;
   bottom: 0;
@@ -78,7 +81,7 @@ h1 strong {
 }
 
 .custom-shape-divider-bottom-1718307965 .shape-fill {
-  fill: #ffffff;
+  fill: #e6e6e6;
 }
 
 .services {
@@ -220,6 +223,10 @@ h1 strong {
   }
   .line {
     width: 80%;
+  }
+  .shift-left,
+  .shift-right {
+    margin-inline: 0 !important;
   }
 }
 
